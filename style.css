@@ -32,6 +32,10 @@ a {
     background-color: #125d8f;
 }
 
+h1.font-weight-bolder {
+    font-size: 3.5em;
+}
+
 span.fas {
     color: #125d8f;
     font-size: 2em;
@@ -50,6 +54,10 @@ span.fas {
 .border h2,
 .border h1 {
     font-weight: 1000;
+}
+
+.border h5 {
+    margin: 5% 0;
 }
 
 .fa-check {
@@ -95,4 +103,25 @@ span.fas {
 
 .popup>iframe {
     margin: 10%;
+}
+
+.input-field {
+    margin: 3.5% 0;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #bbb9b9;
+}
+
+textarea.input-field {
+    border: 1px solid #bbb9b9;
+    padding: 4%;
+}
+
+.input-field:focus {
+    outline: none;
+    border-bottom: 2px solid #008aaf;
+}
+
+.card-body {
+    background-color: #e8f0fe;
 }
