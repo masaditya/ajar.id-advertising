@@ -1,0 +1,98 @@
+@font-face {
+    font-family: AvenirNextLTPro;
+    src: url("fonts/AvenirNextLTPro-Regular_0.otf") format("opentype");
+}
+
+
+
+body {
+    font-family: 'AvenirNextLTPro';
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.nopadbackground {
+    padding-right: 0;
+    padding-left: 0;
+    height: 40%;
+    background: rgba(0, 0, 0, .65);
+    background-blend-mode: darken;
+}
+
+.box {
+    padding: 40% 0;
+}
+
+.btn-abbys {
+    color: white;
+    font-weight: bold;
+    background-color: #125d8f;
+}
+
+span.fas {
+    color: #125d8f;
+    font-size: 2em;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+.btn-paket {
+    font-size: 1.3em;
+}
+
+.border h2,
+.border h1 {
+    font-weight: 1000;
+}
+
+.fa-check {
+    color: #125d8f;
+}
+
+.polygon {
+    -webkit-clip-path: polygon(100% 50%, 0% 100%, 0 0);
+    clip-path: polygon(100% 50%, 0% 100%, 0 0);
+}
+
+.btn-play {
+    margin: 5% 10%;
+    background-color: #055588;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px #ffba26 solid;
+}
+
+.btn-play:hover {
+    background-color: #ffba26;
+}
+
+
+.popup {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.show-popup .popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup>iframe {
+    margin: 10%;
+}
