@@ -125,3 +125,8 @@ textarea.input-field {
 .card-body {
     background-color: #e8f0fe;
 }
+
+.text {
+    font-size: 1.1em;
+    line-height: 2em;
+}
