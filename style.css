@@ -150,3 +150,17 @@ textarea.input-field {
     padding-right: 10px;
     color: limegreen;
 }
+
+.btn-underscore {
+    border: none;
+    margin-left: 1em;
+    margin-right: 3em;
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: #ffff;
+    color: #000;
+}
+
+.sign-select {
+    border-bottom: 3px #125d8f solid;
+}

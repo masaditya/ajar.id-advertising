@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ajar Advertising</title>
+
+        <!-- use fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous" />
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+        <!-- local css -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body
+        style="background: rgba(0, 0, 0, .65);
+    background-blend-mode: darken;background-image: url(https://i.pinimg.com/originals/e9/46/19/e94619cdfa290e6b76c339fc2789578d.jpg);">
+
+        <div class="container d-flex h-100 flex-column" style="padding: 5%;">
+            <div class="flex-grow-1"></div>
+            <div class="row justify-content-center ">
+                <div class="col-sm-5 p-5 text-center" style="background-color: #125d8f; color: #ffff">
+                    <img class="m-5" src="img/png-for-vid3.svg" alt="">
+                    <p class="mt-1 ml-3 mr-3">Lorem Ipsum adalah contoh teks
+                        atau dummy dalam industri percetakan
+                        dan penataan huruf atau typesetting.</p>
+                </div>
+
+                <div class="col-sm-6  bg-white p-5">
+                    <div class="row">
+                        <button class="btn-underscore sign-select">LOGIN</button>
+                        <button class="btn-underscore ">SIGN UP</button>
+
+                    </div>
+
+                    <!-- login -->
+                    <div class="login">
+                        <input class="mt-5 input-field input-login" placeholder="Email or Username" type="text">
+                        <input class="mt-4 input-field input-login" placeholder="Password" type="password">
+                        <br>
+                        <button style="font-size: 1em; font-weight: bold;" class="btn btn-abbys">LOGIN</button>
+                        <p class="mt-5 mr-2">(*) Lorem Ipsum adalah contoh teks atau dummy dalam industri
+                            percetakan dan penataan huruf atau typesetting.</p>
+                    </div>
+                    <div class="signup">
+                        <!-- sign up -->
+                        <input class="mt-4 input-field input-login" placeholder="Full Name" type="text">
+                        <input class="mt-1 input-field input-login" placeholder="Mobile Phone" type="text">
+                        <input class="mt-1 input-field input-login" placeholder="Email" type="email">
+                        <input class="mt-1 input-field input-login" placeholder="Company Name" type="text">
+                        <input class="mt-1 input-field input-login" placeholder="Target Advertising" type="text">
+                        <input class="mt-1 input-field input-login" placeholder="Country" type="text">
+                        <input class="mt-1 input-field input-login" placeholder="City" type="text">
+                        <br>
+                        <button style="font-size: 1em; font-weight: bold;" class="btn btn-abbys">SIGN UP</button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="row justify-content-center"></div>
+            <div class="row justify-content-center"></div>
+            <div class="flex-grow-1"></div>
+        </div>
+
+
+        <!-- lib -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="loader.js"></script>
+        <!-- lib -->
+
+
+        <!-- javascript -->
+        <script>
+            let tab = document.querySelectorAll(".btn-underscore");
+
+            $(document).ready(function () {
+                changeContainer();
+            })
+
+            for (let i = 0; i < tab.length; i++) {
+                $(tab[i]).click(function () {
+                    $(this).addClass("sign-select")
+                    $(tab[i - 1]).removeClass("sign-select");
+                    $(tab[i + 1]).removeClass("sign-select");
+                    changeContainer();
+                })
+            }
+
+            function changeContainer() {
+                if ($(tab[0]).hasClass("sign-select")) {
+                    $(".login").slideDown("slow", function () {
+                        $(this).show()
+                    })
+                    $(".signup").hide()
+                } else {
+                    $(".login").hide();
+                    $(".signup").slideDown("slow", function () {
+                        $(this).show()
+                    })
+                }
+            }
+        </script>
+
+    </body>
+
+
+</html>
