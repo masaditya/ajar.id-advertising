@@ -164,3 +164,28 @@ textarea.input-field {
 .sign-select {
     border-bottom: 3px #125d8f solid;
 }
+
+.input-group-addon img {
+    height: 20px;
+}
+
+.payment-table {
+    font-size: 0.8em;
+}
+
+.payment-radio p {
+    margin-bottom: 0.6em;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #333;
+}
+
+.carousel-inner .carousel-item p {
+    padding: 100% 5% 5% 5%;
+    color: #ffff;
+    font-weight: bold;
+}
