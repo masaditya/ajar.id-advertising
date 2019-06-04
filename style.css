@@ -190,5 +190,40 @@ hr {
     font-weight: bold;
 }
 
+p a {
+    color: #00c2e5;
+    text-decoration: none;
+}
+
+.index .carousel-inner .carousel-item p {
+    padding: 5% 5% 5% 5%;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.carousel-indicators {
+    top: 20px;
+}
+
+
+.carousel-item {
+    padding: 8% 0;
+}
+
+.carousel-item img {
+    width: 10%;
+    height: 10%;
+    margin: 2% 2%;
+}
+
+.carousel-indicators li {
+    background-color: #125d8f;
+}
+
+
+.carousel-caption a {
+    color: #008aaf;
+    cursor: pointer;
+}
 
 /* carousel */
