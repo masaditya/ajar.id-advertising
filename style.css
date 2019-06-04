@@ -166,6 +166,11 @@ textarea.input-field {
     color: #000;
 }
 
+
+.btn-underscore:focus {
+    outline: none;
+}
+
 .sign-select {
     border-bottom: 3px #125d8f solid;
 }
