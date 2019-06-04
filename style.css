@@ -206,6 +206,12 @@ p a {
     font-weight: bold;
 }
 
+
+.payment .carousel-indicators {
+    top: 90%;
+    /* bottom: 20px; */
+}
+
 .carousel-indicators {
     top: 20px;
 }
@@ -303,6 +309,17 @@ p a {
     font-weight: bold;
     font-family: 'AvenirNextLTPro-Bold';
 }
+
+.text-abbyss {
+    color: #125d8f;
+}
+
+.h-50 .carousel-item {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://blog.taskpigeon.co/wp-content/uploads/2018/02/From-Inexperienced-Freelancer-to-Owner-of-a-Digital-Marketing-Agency-Reward.jpeg);
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
 
 /* responsive */
 
