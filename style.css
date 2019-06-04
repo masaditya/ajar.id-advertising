@@ -3,6 +3,11 @@
     src: url("fonts/AvenirNextLTPro-Regular_0.otf") format("opentype");
 }
 
+@font-face {
+    font-family: AvenirNextLTPro-Bold;
+    src: url("fonts/AvenirNextLTPro-Bold_0.otf") format("opentype");
+}
+
 
 
 body {
@@ -285,6 +290,18 @@ p a {
 
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://2.bp.blogspot.com/-J9u_aarhuL4/Wm7sOdUOW3I/AAAAAAAADCE/AmgNn2cxTDwVXbQh5BIeVB0zOyx48PGQgCLcBGAs/s1600/digital-agency.jpg)
+}
+
+
+.text-banner {
+    padding: 30% 5%;
+    width: 60%;
+}
+
+.text-banner h1 {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'AvenirNextLTPro-Bold';
 }
 
 /* responsive */
