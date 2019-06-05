@@ -49,17 +49,17 @@
 
                 /*#region responsive code begin*/
 
-                // var MAX_WIDTH = 980;
 
                 function ScaleSlider() {
                     var containerElement = jssor_1_slider.$Elmt.parentNode;
+
                     var containerWidth = containerElement.clientWidth;
 
                     if (containerWidth) {
 
                         var expectedWidth = Math.min(containerWidth, containerWidth);
-
                         jssor_1_slider.$ScaleWidth(expectedWidth);
+                        console.log(jssor_1_slider)
                     } else {
                         window.setTimeout(ScaleSlider, 30);
                     }
@@ -76,8 +76,7 @@
         <div class="container-fluid m-0 p-0">
             <div class="slider" id="jssor_1">
                 <!-- Loading Screen -->
-                <div data-u="slides" class="container-fluid offset-1"
-                    style="position:relative;width:1351px;height:780px;overflow:hidden;">
+                <div data-u="slides" class="" style="position:relative;overflow:hidden; width: 1350px; height: 780px;">
                     <div class="justify-content-center banner">
                         <div class="text-banner">
                             <h1 class="text-white">Have great stories.
@@ -345,13 +344,18 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="loader.js"></script>
-        <script type="text/javascript">
-            jssor_1_slider_init();
-        </script>
+
+
+
         <!-- lib -->
 
 
         <!-- javascript -->
+
+        <script type="text/javascript">
+            jssor_1_slider_init();
+        </script>
+
         <script>
             let title = document.querySelectorAll(".title")
             let box = document.querySelectorAll(".box")
