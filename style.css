@@ -325,6 +325,48 @@ p a {
     background-blend-mode: darken;
 }
 
+.bg-landing {
+    background-image: url('/img/bg-landing.png');
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.btn-grad-warning {
+    cursor: pointer;
+    border: transparent 2px solid;
+    color: #ffff;
+    background: rgb(250, 201, 89);
+    background: linear-gradient(90deg, rgba(250, 201, 89, 1) 0%, rgba(242, 152, 45, 1) 35%, rgba(242, 152, 45, 1) 100%);
+}
+
+.btn-grad-warning:hover {
+    font-weight: bold;
+    border: #fff 2px solid;
+}
+
+.btn-rounded {
+    border-radius: 5em;
+}
+
+.fa-angle-down {
+    color: white;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.text-blue {
+    color: #05a4bd;
+}
+
+.fz-2 {
+    font-size: 1.5em;
+}
+
+.hr-blue {
+    background-color: #05a4bd;
+    padding: 1.5px;
+}
 
 /* responsive */
 
