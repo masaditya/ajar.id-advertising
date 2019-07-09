@@ -18,102 +18,78 @@
         <!-- local css -->
         <link rel="stylesheet" href="style.css">
 
+        <style>
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100%;
+            }
+        </style>
     </head>
 
-    <body
-        style="background: rgba(0, 0, 0, .65);
-    background-blend-mode: darken;background-image: url(https://i.pinimg.com/originals/e9/46/19/e94619cdfa290e6b76c339fc2789578d.jpg);"
-        class="justify-content-center">
+    <body>
 
-        <div class="container d-flex h-100 flex-column" style="padding: 7% 5%;">
-            <div class="flex-grow-1"></div>
-            <div class="row justify-content-center ">
-                <div class="col-sm-5 p-5 text-center" style="background-color: #125d8f; color: #ffff">
-                    <img class="justify-content-center py-5" src="img/png-for-vid3.svg" alt="">
-                    <p class="mt-1 ml-3 mr-3">Lorem Ipsum adalah contoh teks
-                        atau dummy dalam industri percetakan
-                        dan penataan huruf atau typesetting.</p>
+
+        <div class="full-height d-flex">
+            <div class="split left flex-column blur">
+                <div class="centered w-50 px-5 text-left">
+                    <h2 class="text-white">Reach more people with
+                        <b> AJAR Ads </b> </h2>
                 </div>
-
-                <div class="col-sm-6  bg-white p-5">
-                    <div class="row">
-                        <button class="btn-underscore sign-select">LOGIN</button>
-                        <button class="btn-underscore ">SIGN UP</button>
-
-                    </div>
-
-                    <!-- login -->
-                    <div class="login">
-                        <input class="mt-5 input-field input-login" placeholder="Email or Username" type="text">
-                        <input class="mt-4 input-field input-login" placeholder="Password" type="password">
-                        <br>
-                        <button style="font-size: 1em; font-weight: bold;" class="btn btn-abbys">LOGIN</button>
-                        <p class="mt-5 mr-2">(*) Lorem Ipsum adalah contoh teks atau dummy dalam industri
-                            percetakan dan penataan huruf atau typesetting.</p>
-                    </div>
-                    <div class="signup">
-                        <!-- sign up -->
-                        <input class="mt-4 input-field input-login" placeholder="Full Name" type="text">
-                        <input class="mt-1 input-field input-login" placeholder="Mobile Phone" type="text">
-                        <input class="mt-1 input-field input-login" placeholder="Email" type="email">
-                        <input class="mt-1 input-field input-login" placeholder="Company Name" type="text">
-                        <input class="mt-1 input-field input-login" placeholder="Target Advertising" type="text">
-                        <input class="mt-1 input-field input-login" placeholder="Country" type="text">
-                        <input class="mt-1 input-field input-login" placeholder="City" type="text">
-                        <br>
-                        <button style="font-size: 1em; font-weight: bold;" class="btn btn-abbys">SIGN UP</button>
-                    </div>
-
-
-                </div>
-
-
             </div>
-            <div class="row justify-content-center"></div>
-            <div class="row justify-content-center"></div>
-            <div class="flex-grow-1"></div>
+
+            <div class="split right flex-column">
+                <div class="centered w-50">
+                    <h3> <b> Hello Ajarian ! </b></h3>
+                    <h4>Let’s start make a noise for your brand !</h4>
+                    <div class="form-group mt-5 ">
+                        <input type="text" class="form-control w-100 my-4" id="username" placeholder="User name">
+                        <div class="pass_show">
+                            <input type="password" class=" form-control w-100 my-4" id="password"
+                                placeholder="Password">
+                        </div>
+                    </div>
+                    <button class="btn-grad-warning w-100 btn-rounded py-2">Sign In</button>
+
+                    <p class="text-right my-3 fz-1"> <a href="">Forget my password</a> </p>
+                    <p class="text-center fz-1">By pressing sign in button, I agreed to the applied <a href="">term and
+                            condition</a> made by PT
+                        AJAR Media
+                        Digital</p>
+                    <p class="text-center fz-1"> <a href="">Sign up</a> here if you are not registered yet.</p>
+                </div>
+            </div>
         </div>
 
 
         <!-- lib -->
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="loader.js"></script>
-        <!-- lib -->
+        <script src=" js/jquery-3.4.1.min.js"> </script> <script src="js/popper.min.js">
+                        </script>
+                        <script src="js/bootstrap.min.js"></script>
+                        <script src="loader.js"></script>
+                        <!-- lib -->
 
 
-        <!-- javascript -->
-        <script>
-            let tab = document.querySelectorAll(".btn-underscore");
+                        <!-- javascript -->
+                        <script>
+                            $(document).ready(function () {
+                                $('.pass_show').append('<span class="ptxt fa fa-eye"></span>');
+                            });
 
-            $(document).ready(function () {
-                changeContainer();
-            })
 
-            for (let i = 0; i < tab.length; i++) {
-                $(tab[i]).click(function () {
-                    $(this).addClass("sign-select")
-                    $(tab[i - 1]).removeClass("sign-select");
-                    $(tab[i + 1]).removeClass("sign-select");
-                    changeContainer();
-                })
-            }
+                            $(document).on('click', '.pass_show .ptxt', function () {
 
-            function changeContainer() {
-                if ($(tab[0]).hasClass("sign-select")) {
-                    $(".login").slideDown("slow", function () {
-                        $(this).show()
-                    })
-                    $(".signup").hide()
-                } else {
-                    $(".login").hide();
-                    $(".signup").slideDown("slow", function () {
-                        $(this).show()
-                    })
-                }
-            }
-        </script>
+
+                                $(this).prev().attr('type', function (index, attr) {
+                                    return attr == 'password' ? 'text' : 'password';
+                                });
+
+                            });
+                        </script>
 
     </body>
 

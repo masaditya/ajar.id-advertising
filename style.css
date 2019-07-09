@@ -251,6 +251,35 @@ p a {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://2.bp.blogspot.com/-J9u_aarhuL4/Wm7sOdUOW3I/AAAAAAAADCE/AmgNn2cxTDwVXbQh5BIeVB0zOyx48PGQgCLcBGAs/s1600/digital-agency.jpg)
 }
 
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.left {
+    left: 0;
+    background-color: #111;
+}
+
+.right {
+    right: 0;
+}
+
+.centered {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
 
 .text-banner {
     padding: 30% 5%;
@@ -272,8 +301,8 @@ p a {
     color: #ffff;
 }
 
-.round-sm{
-   border-radius: 1em;
+.round-sm {
+    border-radius: 1em;
 }
 
 .h-50 .carousel-item {
@@ -304,7 +333,7 @@ p a {
 
 }
 
-.border-2{
+.border-2 {
     border-color: #ffba26;
     border-width: medium;
 }
@@ -336,23 +365,41 @@ p a {
     padding: 1.5px;
 }
 
-.blog-header{
+.blog-header {
     background-position: center center;
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
-.blog-header::after{
-    content:'';
+.blog-header::after {
+    content: '';
     background-image: url('/img/bg-landing.png');
-
     position: absolute;
-    top:0px;
+    top: 0px;
     left: 0px;
-    width:100%;
-    height:100%;
-    z-index:-1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     opacity: 0.2;
+}
+
+.blur::after {
+    content: '';
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://2.bp.blogspot.com/-J9u_aarhuL4/Wm7sOdUOW3I/AAAAAAAADCE/AmgNn2cxTDwVXbQh5BIeVB0zOyx48PGQgCLcBGAs/s1600/digital-agency.jpg);
+    /* background-image: url('/img/bg2.jpg'); */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.blur {
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .laptop-bg {
@@ -361,8 +408,36 @@ p a {
     right: 0px;
 }
 
-i.fa-check{
+i.fa-check {
     color: #ffba26;
+}
+
+.pass_show {
+    position: relative
+}
+
+.pass_show .ptxt {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 10px;
+
+    z-index: 1;
+
+    color: #f36c01;
+
+    margin-top: -10px;
+
+    cursor: pointer;
+
+    transition: .3s ease all;
+
+}
+
+.pass_show .ptxt:hover {
+    color: #333333;
 }
 
 /* responsive */
