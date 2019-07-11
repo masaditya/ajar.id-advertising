@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+.w-30{
+    width: 30%!important;
+}
+
 
 .btn-abbys {
     color: white;
