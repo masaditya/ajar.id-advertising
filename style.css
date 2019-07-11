@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: #ffff;
+
     text-decoration: none;
 }
 
@@ -271,7 +271,7 @@ p a {
     border-radius: 5em;
 }
 
-.fa-angle-down {
+.bg-landing .fa-angle-down {
     color: white;
     bottom: 20px;
     z-index: 1000;
@@ -359,6 +359,64 @@ i.fa-check {
 .pass_show .ptxt:hover {
     color: #333333;
 }
+
+
+/* dashboard */
+img.user-icon {
+    width: 3em;
+}
+
+.dropdown-menu a {
+    color: #939393;
+}
+
+.dropdown button {
+    color: #939393;
+}
+
+
+.dropdown-menu li {
+    margin: .5em 0;
+}
+
+.count {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* background-color: #d9534f; */
+}
+
+
+.container li.nav-item {
+    padding: 0 2em;
+}
+
+
+.active-tab {
+    border-radius: 0.3em;
+    background: rgb(5, 85, 137);
+    background: linear-gradient(90deg, rgba(5, 85, 137, 1) 0%, rgba(5, 164, 189, 1) 100%);
+}
+
+
+button.active-tab:hover {
+    color: white
+}
+
+.nav-item a {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #acb5ba;
+}
+
+
+.active-tab a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffff;
+}
+
 
 /* responsive */
 
