@@ -19,17 +19,6 @@ a {
     text-decoration: none;
 }
 
-.nopadbackground {
-    padding-right: 0;
-    padding-left: 0;
-    height: 40%;
-    background: rgba(0, 0, 0, .65);
-    background-blend-mode: darken;
-}
-
-.box {
-    padding: 40% 0;
-}
 
 .btn-abbys {
     color: white;
@@ -67,47 +56,6 @@ span.fas {
 
 .fa-check {
     color: #125d8f;
-}
-
-.polygon {
-    -webkit-clip-path: polygon(100% 50%, 0% 100%, 0 0);
-    clip-path: polygon(100% 50%, 0% 100%, 0 0);
-}
-
-.btn-play {
-    margin: 5% 10%;
-    background-color: #055588;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px #ffba26 solid;
-}
-
-.btn-play:hover {
-    background-color: #ffba26;
-}
-
-
-.popup {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s ease;
-}
-
-.show-popup .popup {
-    opacity: 1;
-    visibility: visible;
-}
-
-.popup>iframe {
-    margin: 10%;
 }
 
 .input-field {
@@ -154,25 +102,6 @@ textarea.input-field {
 .fa-check {
     padding-right: 10px;
     color: limegreen;
-}
-
-.btn-underscore {
-    border: none;
-    margin-left: 1em;
-    margin-right: 3em;
-    padding: 5px 20px;
-    font-weight: bold;
-    background-color: #ffff;
-    color: #000;
-}
-
-
-.btn-underscore:focus {
-    outline: none;
-}
-
-.sign-select {
-    border-bottom: 3px #125d8f solid;
 }
 
 .input-group-addon img {
@@ -417,23 +346,14 @@ i.fa-check {
 }
 
 .pass_show .ptxt {
-
     position: absolute;
-
     top: 50%;
-
     right: 10px;
-
     z-index: 1;
-
     color: #f36c01;
-
     margin-top: -10px;
-
     cursor: pointer;
-
     transition: .3s ease all;
-
 }
 
 .pass_show .ptxt:hover {

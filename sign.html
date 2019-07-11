@@ -46,11 +46,10 @@
                 <div class="centered w-50">
                     <h3> <b> Hello Ajarian ! </b></h3>
                     <h4>Let’s start make a noise for your brand !</h4>
-                    <div class="form-group mt-5 ">
-                        <input type="text" class="form-control w-100 my-4" id="username" placeholder="User name">
+                    <div class="form-group account mt-5 ">
+                        <input type="text" class=" w-100 my-4" id="username" placeholder="User name">
                         <div class="pass_show">
-                            <input type="password" class=" form-control w-100 my-4" id="password"
-                                placeholder="Password">
+                            <input type="password" class=" w-100 my-4" id="password" placeholder="Password">
                         </div>
                     </div>
                     <button class="btn-grad-warning w-100 btn-rounded py-2">Sign In</button>
@@ -67,31 +66,30 @@
 
 
         <!-- lib -->
-        <script src=" js/jquery-3.4.1.min.js"> </script> <script src="js/popper.min.js">
-                        </script>
-                        <script src="js/bootstrap.min.js"></script>
-                        <script src="loader.js"></script>
-                        <!-- lib -->
+        <script src=" js/jquery-3.4.1.min.js"> </script>
+        <script src="js/popper.min.js">
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="loader.js"></script>
+        <!-- lib -->
 
 
-                        <!-- javascript -->
-                        <script>
-                            $(document).ready(function () {
-                                $('.pass_show').append('<span class="ptxt fa fa-eye"></span>');
-                            });
+        <!-- javascript -->
+        <script>
+            $(document).ready(function () {
+                $('.pass_show').append('<span class="ptxt fa fa-eye"></span>');
+            });
 
 
-                            $(document).on('click', '.pass_show .ptxt', function () {
+            $(document).on('click', '.pass_show .ptxt', function () {
 
 
-                                $(this).prev().attr('type', function (index, attr) {
-                                    return attr == 'password' ? 'text' : 'password';
-                                });
+                $(this).prev().attr('type', function (index, attr) {
+                    return attr == 'password' ? 'text' : 'password';
+                });
 
-                            });
-                        </script>
-
+            });
+        </script>
     </body>
-
 
 </html>
