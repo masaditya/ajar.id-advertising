@@ -19,8 +19,8 @@ a {
     text-decoration: none;
 }
 
-.w-30{
-    width: 30%!important;
+.w-30 {
+    width: 30% !important;
 }
 
 
@@ -123,8 +123,8 @@ textarea.input-field {
 hr {
     border: none;
     height: 1px;
-    color: #333;
-    background-color: #333;
+    color: rgb(129, 129, 129);
+    background-color: rgb(187, 187, 187);
 }
 
 .carousel-inner .carousel-item p {
@@ -421,6 +421,25 @@ button.active-tab:hover {
     color: #ffff;
 }
 
+.text-gray {
+    color: #acb5ba;
+}
+
+.border-dashed {
+    border: dashed 2px #acb5ba;
+}
+
+.w-60{
+    width: 60% !important;    
+}
+
+.w-40{
+    width: 40% !important;    
+}
+
+.bg-gray{
+    background-color: #cecece;
+}
 
 /* responsive */
 
