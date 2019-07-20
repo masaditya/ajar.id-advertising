@@ -8,7 +8,9 @@
     src: url("fonts/AvenirNextLTPro-BoldCn_0.otf") format("opentype");
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'AvenirNextLTPro';
@@ -267,7 +269,6 @@ p a {
 }
 
 .border-2 {
-    border-color: #ffba26;
     border-width: medium;
 }
 
@@ -414,6 +415,15 @@ button.active-tab:hover {
     color: #acb5ba;
 }
 
+.rounded-right-sm {
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 5em;
+}
+
+.rounded-left-sm {
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
+}
 
 .active-tab a {
     text-decoration: none;
@@ -429,15 +439,15 @@ button.active-tab:hover {
     border: dashed 2px #acb5ba;
 }
 
-.w-60{
-    width: 60% !important;    
+.w-60 {
+    width: 60% !important;
 }
 
-.w-40{
-    width: 40% !important;    
+.w-40 {
+    width: 40% !important;
 }
 
-.bg-gray{
+.bg-gray {
     background-color: #cecece;
 }
 
