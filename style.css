@@ -47,6 +47,13 @@ span.fas {
     line-height: 1.5em;
 }
 
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .btn-paket {
     font-size: 1.3em;
 }
@@ -170,6 +177,8 @@ p a {
 .carousel-indicators li {
     background-color: #125d8f;
 }
+
+
 
 
 .carousel-caption a {
