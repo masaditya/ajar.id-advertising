@@ -460,20 +460,44 @@ button.active-tab:hover {
     background-color: #cecece;
 }
 
-.content-landing{
+.content-landing {
     width: 100%;
 }
+
 /* responsive */
 
 
+@media (min-width: 0px) {
+    .text-content-landing {
+        width: 100%
+    }
+
+    .content-landing.w-50 {
+        width: 100%;
+    }
+    .footer  {
+        text-align: center;
+    }
+    .footer .address {
+        justify-content: center;
+    }
+
+    .footer img{
+        max-width: 80px;
+    }
+
+    
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .text-content-landing {
         width: 100%
     }
-    .content-landing.w-50{
+
+    .content-landing.w-50 {
         width: 100%;
     }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -481,6 +505,11 @@ button.active-tab:hover {
     .text-content-landing {
         width: 100%
     }
+
+    .footer {
+        text-align: left;
+    }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
